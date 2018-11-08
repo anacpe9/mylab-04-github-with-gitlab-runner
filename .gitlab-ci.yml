@@ -12,3 +12,4 @@ getinfo job:
     - docker:dind
   script:
     - cat /etc/alpine-release
+    - echo 'Hello gitlab CI/CD'
