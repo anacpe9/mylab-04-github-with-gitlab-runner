@@ -27,6 +27,8 @@
   - see **Connect manually** section
   - [generation new gitlab 'personal access token' with `api` scope](Personal Access Token)
   - [GitHub project integration](https://docs.gitlab.com/ee/user/project/integrations/github.html)
-  - Github `Setting > Webhooks` - `https://gitlab.com/api/v4/projects/<NAMESPACE>%2F<PROJECT>/mirror/pull?private_token=<PERSONAL_ACCESS_TOKEN>`
-  - ***Or*** Github `Setting > Webhooks` - `https://gitlab.example.com/api/v4/projects/:<Project ID>/mirror/pull?private_token=<PERSONAL_ACCESS_TOKEN>`
+    - ***Important*** must check `Trigger pipelines for mirror updates`, when add `Mirror a repository`
+    - ****OR*** use webhook [Triggering pipelines through the API](https://docs.gitlab.com/ee/ci/triggers/)
+  - **Github** `Setting > Webhooks` - `https://gitlab.com/api/v4/projects/<NAMESPACE>%2F<PROJECT>/mirror/pull?private_token=<PERSONAL_ACCESS_TOKEN>`
+  - ***OR*** Github `Setting > Webhooks` - `https://gitlab.example.com/api/v4/projects/:<Project ID>/mirror/pull?private_token=<PERSONAL_ACCESS_TOKEN>`
     - [Start the pull mirroring process for a Project: API](https://docs.gitlab.com/ee/api/projects.html#start-the-pull-mirroring-process-for-a-project-starter)
