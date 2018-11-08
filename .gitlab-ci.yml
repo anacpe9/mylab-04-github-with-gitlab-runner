@@ -1,0 +1,14 @@
+image: alpine:3.8
+
+stages:
+  - welcome
+
+before_script:
+  - uname -a
+
+getinfo job:
+  stage: welcome
+  services:
+    - docker:dind
+script:
+  - cat /etc/alpine-release
