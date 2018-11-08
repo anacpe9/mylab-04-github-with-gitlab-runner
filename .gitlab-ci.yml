@@ -10,5 +10,5 @@ getinfo job:
   stage: welcome
   services:
     - docker:dind
-script:
-  - cat /etc/alpine-release
+  script:
+    - cat /etc/alpine-release

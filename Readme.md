@@ -14,13 +14,13 @@
 
 - [generation new github 'personal access token'](https://github.com/settings/tokens/new)
   - [url to generate token](https://github.com/settings/tokens/new)
+  - At least, The `repo` and `admin:repo_hook` should be enable to allow GitLab access
   - ***Important*** copy & save
   - `***`
 
-#### [Using GitLab CI/CD with a GitHub repository](https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html)
-
-- []()
-
 ### Gitlab setting up
 
-- <Project>/Settings/Integrations/Github
+#### [Using GitLab CI/CD with a GitHub repository](https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html)
+
+- [<project>/Settings/Repository/<Mirror a repository>](https://docs.gitlab.com/ee/workflow/repository_mirroring.html#pulling-from-a-remote-repository)
+- [<project>/Settings/Integrations/<Github>](https://docs.gitlab.com/ee/ci/ci_cd_for_external_repos/github_integration.html)
